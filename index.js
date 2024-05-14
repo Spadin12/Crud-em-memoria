@@ -34,4 +34,13 @@ console.log (body)
   res.send('Item adicionado com sucesso:' + novoitem)
 
 })
+
+app.put('personagem/:id', function(req, res) {
+  const id = req.params.id
+  const body = req.body
+  const novoitem = body.nome
+  lista [id - 1] = novoitem
+
+  res.send('Item atualizado com sucesso: ' + id + ' - ' + novoitem)
+})
 app.listen(3000)
