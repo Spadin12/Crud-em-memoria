@@ -44,7 +44,7 @@ app.put('personagem/:id', function(req, res) {
   res.send('Item atualizado com sucesso: ' + id + ' - ' + novoitem)
 })
 
-app.delete('/personagem:id', function (req, res)  {
+app.delete('/personagem/:id', function (req, res)  {
   res.send('Delete')
 })
 app.listen(3000)
